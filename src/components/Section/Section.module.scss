@@ -1,0 +1,79 @@
+.velcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 700px;
+  background-image: url("https://preview.colorlib.com/theme/villa/img/hero_1.jpg");
+  background-position: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  ::after {
+    background-color: rgb(0, 0, 0.3);
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+
+      h1 {
+        font-size: 50px;
+        font-weight: 900;
+      }
+      .btn {
+        display: flex;
+        gap: 10px;
+        .pink {
+          width: 250px;
+          height: 45px;
+          color: white;
+          border: none;
+          cursor: pointer;
+          background-color: #e61c5d;
+          border-radius: 17px;
+        }
+        .transparent {
+          background-color: transparent;
+          color: black;
+          border: 1px solid black;
+          width: 200px;
+          height: 45px;
+          border-radius: 17px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 300px) {
+  .velcome {
+    .container {
+      .content {
+        h1 {
+          font-size: 35px;
+        }
+        .btn{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .pink{
+                width: 170px;
+                height: 37px;
+            }
+            .transparent{
+                width: 150px;
+                height: 37px;
+            }
+        }
+      }
+    }
+  }
+}
